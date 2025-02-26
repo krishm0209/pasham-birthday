@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasham's 20th Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section with Typing Effect -->
+    <div class="hero">
+        <h1 id="typing-text">Happy 20th Birthday, Pasham!</h1>
+        <p>Countdown to midnight:</p>
+        <div id="countdown"></div>
+        <button id="playMusic">Play Music</button>
+    </div>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+        <div class="slideshow">
+            <img src="images/IMG_2516.jpg" class="slide" alt="Memory 1">
+            <img src="images/IMG_3632.JPG" class="slide" alt="Memory 2">
+            <img src="images/IMG_8751.jpg" class="slide" alt="Memory 3">
+            <img src="images/IMG_8854.jpg" class="slide" alt="Memory 4">
+            <img src="images/IMG_8895.jpg" class="slide" alt="Memory 5">
+        </div>
+    </div>
+
+    <!-- Birthday Message Section -->
+    <div class="message-section">
+        <h2>Special Birthday Message</h2>
+        <p>Dear Pasham,</p>
+        <p>Wishing you a day filled with love, happiness, and all the amazing things life has to offer. May this year bring you success and joy. Have the most wonderful birthday ever!</p>
+        <p>With lots of love,</p>
+        <p>Krish</p>
+    </div>
+
+    <!-- Guestbook Section -->
+    <div class="guestbook">
+        <h2>Guestbook</h2>
+        <p>Leave a message for Pasham!</p>
+        <input type="text" id="guestName" placeholder="Your Name">
+        <textarea id="guestMessage" placeholder="Write your message..."></textarea>
+        <button id="submitMessage">Send Message</button>
+        <div id="messageList"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Made with ❤️ by Krish for Pasham's 20th Birthday</p>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
