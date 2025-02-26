@@ -1,19 +1,20 @@
 // Typing Effect for the Welcome Message
 document.addEventListener("DOMContentLoaded", function () {
     const typingText = document.getElementById("typing-text");
-    const text = typingText.innerText;
-    typingText.innerText = ""; // Clear text for animation
+    const text = typingText.textContent; // Use textContent to preserve spaces
+    typingText.textContent = ""; // Clear text for animation
     let i = 0;
 
     function typeWriter() {
         if (i < text.length) {
-            typingText.innerText += text.charAt(i);
+            typingText.textContent += text[i]; // Use textContent instead of innerText
             i++;
             setTimeout(typeWriter, 100);
         }
     }
     typeWriter();
 });
+
 
 // Countdown Timer for Midnight
 const countdownElement = document.getElementById("countdown");
