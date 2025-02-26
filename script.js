@@ -59,7 +59,7 @@ function showSlides() {
 document.addEventListener("DOMContentLoaded", showSlides);
 
 // Play Music
-const music = new Audio("music/happy_birthday.mp3");
+const music = new Audio("happy_birthday.mp3");
 const musicButton = document.getElementById("playMusic");
 
 musicButton.addEventListener("click", function () {
